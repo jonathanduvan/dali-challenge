@@ -12,7 +12,7 @@ const MemberIcon = (props) => {
 
 
   return (
-    <div id="memberCard" className="card small blue lighten-1">
+    <div id="memberCard" className="card small blue lighten-1 hoverable">
       <img className="circle responsive-img" src={iconURL} alt="cover" />
       <h4 id="memberName">{props.member.name}</h4>
     </div>
