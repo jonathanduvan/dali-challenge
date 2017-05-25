@@ -1,5 +1,6 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Comfortaa", cursive;
+  color: white;
   background: url(../public/background.jpg) repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -9,18 +10,22 @@ body {
 
 
 .circle {
-  height: 65%;
-  width: 78%;
+  height: 55%;
+  width: 70%;
 }
 
 .center {
   height: 50px;
   width: 120px;
-  margin-top: 5px;
+  margin-top:3px;
 }
-
+h5{
+  margin-top: 17px;
+  margin-left: 5px;
+}
 #memberName {
     color: black;
+    outline: black;
 }
 
 .container {
@@ -33,9 +38,7 @@ body {
 
 #memberCard {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content:center;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
 }

@@ -21,3 +21,11 @@ export function fetchMembers() {
     });
   };
 }
+export function fetchMember(member) {
+  return (dispatch) => {
+    dispatch({
+      type: 'FETCH_MEMBER',
+      payload: member,
+    });
+  };
+}

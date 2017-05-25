@@ -5,12 +5,14 @@ import { connect } from 'react-redux';
 
 const NavBar = (props) => {
   return (
-    <nav>
-      <div id="navbar" className="nav-wrapper  purple darken-4">
-        <h5 className="left">Dashboard</h5>
-        <img className="center center" src={'dalilogo.png'} alt="cover" />
-      </div>
-    </nav>
+    <div className="navbar-fixed">
+      <nav>
+        <div id="navbar" className="nav-wrapper  grey darken-4">
+          <h5 className="flow-text left">Dashboard</h5>
+          <a href="#" className="brand-logo center"><img className="center" src={'dalilogo.png'} alt="cover" /></a>
+        </div>
+      </nav>
+    </div>
   );
 };
 

@@ -1,22 +1,23 @@
-
 import React from 'react';
-
+import { connect } from 'react-redux';
+import { fetchMember } from '../actions';
 /* eslint jsx-a11y/no-static-element-interactions: 0 */
 
 
 const DALI = '//mappy.dali.dartmouth.edu/';
 
 const MemberIcon = (props) => {
-  console.log(props.member.iconUrl);
+  function onClick() {
+    props.fetchMember(props.member);
+  }
   const iconURL = DALI.concat(props.member.iconUrl);
 
-
   return (
-    <div id="memberCard" className="card small blue lighten-1 hoverable">
-      <img className="circle responsive-img" src={iconURL} alt="cover" />
-      <h4 id="memberName">{props.member.name}</h4>
+    <div id="memberCard" className="card small transparent hoverable" onClick={onClick}>
+      <img className="circle" src={iconURL} alt="cover" />
+      <h5 id="memberName">{props.member.name}</h5>
     </div>
   );
 };
 
-export default MemberIcon;
+export default connect(null, { fetchMember })(MemberIcon);
