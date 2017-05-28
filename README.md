@@ -1,3 +1,10 @@
 # dali-challenge
 
-Site is (http://jdgonzalez-dali-challenge.surge.sh/)[here]
+Site is [here.](http://jdgonzalez-dali-challenge.surge.sh/)
+
+
+## Frameworks and Libraries Used
+* React
+* Materialize CSS
+* Leaflet
+
