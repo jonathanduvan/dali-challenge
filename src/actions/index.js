@@ -5,7 +5,8 @@ import axios from 'axios';
 // keys for actiontypes
 export const ActionTypes = {
   FETCH_MEMBERS: 'FETCH_MEMBERS',
-  FETCH_MEMBER: 'FETCH_MEMBER',
+  FETCH_MAP: 'FETCH_MAP',
+  FETCH_SITE: 'FETCH_SITE',
 };
 
 
@@ -21,10 +22,18 @@ export function fetchMembers() {
     });
   };
 }
-export function fetchMember(member) {
+export function fetchMemberMap(member) {
   return (dispatch) => {
     dispatch({
-      type: 'FETCH_MEMBER',
+      type: 'FETCH_MAP',
+      payload: member,
+    });
+  };
+}
+export function fetchMemberSite(member) {
+  return (dispatch) => {
+    dispatch({
+      type: 'FETCH_SITE',
       payload: member,
     });
   };
